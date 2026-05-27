@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Mens Doubles</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+    margin:0;
+}
+
+.banner{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    max-width:1100px;
+    margin:20px auto;
+    padding:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#0b3d91;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+td.player{
+    text-align:left;
+    font-weight:bold;
+}
+
+.inactive{
+    background:#fafafa;
+    color:#777;
+}
+
+.positive{
+    color:green;
+    font-weight:bold;
+}
+
+.negative{
+    color:red;
+    font-weight:bold;
+}
+
+.footer{
+    text-align:center;
+    color:#777;
+    font-size:0.9rem;
+    margin:25px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+<h1>Overall Doubles</h1>
+<p>Player Ratings & Match Results</p>
+</div>
+
+<div class="container">
+
+<table>
+
+<thead>
+<tr>
+<th>Player</th>
+<th>Rating</th>
+<th>Played</th>
+<th>Won</th>
+<th>Lost</th>
+<th>Win %</th>
+<th>Original</th>
+<th>Change</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td class="player">KenS</td>
+<td>4.17861</td>
+<td>108</td>
+<td>62</td>
+<td>46</td>
+<td>57.4%</td>
+<td>4.00000</td>
+<td class="positive">0.17861</td>
+</tr>
+
+<tr>
+<td class="player">StephenW</td>
+<td>4.14373</td>
+<td>10</td>
+<td>9</td>
+<td>1</td>
+<td>90.0%</td>
+<td>4.00000</td>
+<td class="positive">0.14373</td>
+</tr>
+
+<tr>
+<td class="player">BobT</td>
+<td>4.10576</td>
+<td>53</td>
+<td>30</td>
+<td>23</td>
+<td>56.6%</td>
+<td>4.00000</td>
+<td class="positive">0.10576</td>
+</tr>
+
+<tr>
+<td class="player">GrantW</td>
+<td>4.10317</td>
+<td>27</td>
+<td>14</td>
+<td>13</td>
+<td>51.9%</td>
+<td>4.00000</td>
+<td class="positive">0.10317</td>
+</tr>
+
+<tr>
+<td class="player">RamanM</td>
+<td>4.10140</td>
+<td>11</td>
+<td>9</td>
+<td>2</td>
+<td>81.8%</td>
+<td>4.00000</td>
+<td class="positive">0.10140</td>
+</tr>
+
+<tr>
+<td class="player">YoungJohn</td>
+<td>4.06623</td>
+<td>26</td>
+<td>15</td>
+<td>11</td>
+<td>57.7%</td>
+<td>4.00000</td>
+<td class="positive">0.06623</td>
+</tr>
+
+<tr>
+<td class="player">AmirJ</td>
+<td>4.06162</td>
+<td>15</td>
+<td>9</td>
+<td>6</td>
+<td>60.0%</td>
+<td>4.00000</td>
+<td class="positive">0.06162</td>
+</tr>
+
+<tr>
+<td class="player">DeeM</td>
+<td>3.55484</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>100.0%</td>
+<td>3.50000</td>
+<td class="positive">0.05484</td>
+</tr>
+
+<tr>
+<td class="player">JaeMan</td>
+<td>4.30450</td>
+<td>7</td>
+<td>5</td>
+<td>2</td>
+<td>71.4%</td>
+<td>4.25000</td>
+<td class="positive">0.05450</td>
+</tr>
+
+<tr>
+<td class="player">WillChoi</td>
+<td>4.05121</td>
+<td>9</td>
+<td>6</td>
+<td>3</td>
+<td>66.7%</td>
+<td>4.00000</td>
+<td class="positive">0.05121</td>
+</tr>
+
+<tr>
+<td class="player">VictorJ</td>
+<td>4.04362</td>
+<td>11</td>
+<td>7</td>
+<td>4</td>
+<td>63.6%</td>
+<td>4.00000</td>
+<td class="positive">0.04362</td>
+</tr>
+
+<tr>
+<td class="player">JordanT</td>
+<td>3.78840</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>100.0%</td>
+<td>3.75000</td>
+<td class="positive">0.03840</td>
+</tr>
+
+<tr>
+<td class="player">Yaz</td>
+<td>3.53657</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>100.0%</td>
+<td>3.50000</td>
+<td class="positive">0.03657</td>
+</tr>
+
+<tr>
+<td class="player">JamieCh</td>
+<td>3.53585</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>75.0%</td>
+<td>3.50000</td>
+<td class="positive">0.03585</td>
+</tr>
+
+<tr>
+<td class="player">TonyThomas</td>
+<td>4.03557</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>100.0%</td>
+<td>4.00000</td>
+<td class="positive">0.03557</td>
+</tr>
+
+<tr>
+<td class="player">AlanV</td>
+<td>4.03557</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>100.0%</td>
+<td>4.00000</td>
+<td class="positive">0.03557</td>
+</tr>
+
+<tr>
+<td class="player">Sherman</td>
+<td>4.03306</td>
+<td>19</td>
+<td>8</td>
+<td>11</td>
+<td>42.1%</td>
+<td>4.00000</td>
+<td class="positive">0.03306</td>
+</tr>
+
+<tr>
+<td class="player">DavidDR</td>
+<td>3.53206</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>50.0%</td>
+<td>3.50000</td>
+<td class="positive">0.03206</td>
+</tr>
+
+<tr>
+<td class="player">CheungJ</td>
+<td>4.02373</td>
+<td>13</td>
+<td>8</td>
+<td>5</td>
+<td>61.5%</td>
+<td>4.00000</td>
+<td class="positive">0.02373</td>
+</tr>
+
+<tr>
+<td class="player">KyleTall</td>
+<td>3.77299</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>66.7%</td>
+<td>3.75000</td>
+<td class="positive">0.02299</td>
+</tr>
+
+<tr>
+<td class="player">ElaineTwo</td>
+<td>3.51930</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>66.7%</td>
+<td>3.50000</td>
+<td class="positive">0.01930</td>
+</tr>
+
+<tr>
+<td class="player">Tracy</td>
+<td>3.51930</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>66.7%</td>
+<td>3.50000</td>
+<td class="positive">0.01930</td>
+</tr>
+
+<tr>
+<td class="player">Trinh</td>
+<td>4.01923</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>66.7%</td>
+<td>4.00000</td>
+<td class="positive">0.01923</td>
+</tr>
+
+<tr>
+<td class="player">Kiet</td>
+<td>4.01923</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>66.7%</td>
+<td>4.00000</td>
+<td class="positive">0.01923</td>
+</tr>
+
+<tr>
+<td class="player">MJMJ</td>
+<td>3.51653</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>60.0%</td>
+<td>3.50000</td>
+<td class="positive">0.01653</td>
+</tr>
+
+<tr>
+<td class="player">MaeMai</td>
+<td>3.50444</td>
+<td>16</td>
+<td>7</td>
+<td>9</td>
+<td>43.8%</td>
+<td>3.50000</td>
+<td class="positive">0.00444</td>
+</tr>
+
+<tr>
+<td class="player">Elida</td>
+<td>3.99916</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>50.0%</td>
+<td>4.00000</td>
+<td class="negative">-0.00084</td>
+</tr>
+
+<tr>
+<td class="player">Carmelo</td>
+<td>3.99872</td>
+<td>14</td>
+<td>6</td>
+<td>8</td>
+<td>42.9%</td>
+<td>4.00000</td>
+<td class="negative">-0.00128</td>
+</tr>
+
+<tr>
+<td class="player">EvanL</td>
+<td>4.24701</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>50.0%</td>
+<td>4.25000</td>
+<td class="negative">-0.00299</td>
+</tr>
+
+<tr>
+<td class="player">Nick1</td>
+<td>3.23878</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>33.3%</td>
+<td>3.25000</td>
+<td class="negative">-0.01122</td>
+</tr>
+
+<tr>
+<td class="player">DannyL</td>
+<td>3.98312</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>33.3%</td>
+<td>4.00000</td>
+<td class="negative">-0.01688</td>
+</tr>
+
+<tr>
+<td class="player">JoelK</td>
+<td>3.98234</td>
+<td>46</td>
+<td>23</td>
+<td>23</td>
+<td>50.0%</td>
+<td>4.00000</td>
+<td class="negative">-0.01766</td>
+</tr>
+
+<tr>
+<td class="player">Tosh1</td>
+<td>3.22842</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>25.0%</td>
+<td>3.25000</td>
+<td class="negative">-0.02158</td>
+</tr>
+
+<tr>
+<td class="player">BalajiV</td>
+<td>3.71954</td>
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>33.3%</td>
+<td>3.75000</td>
+<td class="negative">-0.03046</td>
+</tr>
+
+<tr>
+<td class="player">ElaineD</td>
+<td>3.46831</td>
+<td>15</td>
+<td>7</td>
+<td>8</td>
+<td>46.7%</td>
+<td>3.50000</td>
+<td class="negative">-0.03169</td>
+</tr>
+
+<tr>
+<td class="player">VuMeniscus</td>
+<td>3.71446</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0.0%</td>
+<td>3.75000</td>
+<td class="negative">-0.03554</td>
+</tr>
+
+<tr>
+<td class="player">KevinINO</td>
+<td>3.45625</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>0.0%</td>
+<td>3.50000</td>
+<td class="negative">-0.04375</td>
+</tr>
+
+<tr>
+<td class="player">BrianYee</td>
+<td>3.69904</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>20.0%</td>
+<td>3.75000</td>
+<td class="negative">-0.05096</td>
+</tr>
+
+<tr>
+<td class="player">JimB</td>
+<td>3.92744</td>
+<td>10</td>
+<td>3</td>
+<td>7</td>
+<td>30.0%</td>
+<td>4.00000</td>
+<td class="negative">-0.07256</td>
+</tr>
+
+<tr>
+<td class="player">BrandonW</td>
+<td>3.89235</td>
+<td>16</td>
+<td>6</td>
+<td>10</td>
+<td>37.5%</td>
+<td>4.00000</td>
+<td class="negative">-0.10765</td>
+</tr>
+
+<tr>
+<td class="player">OracleJohn</td>
+<td>3.85131</td>
+<td>7</td>
+<td>0</td>
+<td>7</td>
+<td>0.0%</td>
+<td>4.00000</td>
+<td class="negative">-0.14869</td>
+</tr>
+
+<tr>
+<td class="player">MikeG</td>
+<td>3.84155</td>
+<td>21</td>
+<td>6</td>
+<td>15</td>
+<td>28.6%</td>
+<td>4.00000</td>
+<td class="negative">-0.15845</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="footer">
+    Last updated May 27, 2026 11:37 AM
+</div>
+
+</body>
+</html>
